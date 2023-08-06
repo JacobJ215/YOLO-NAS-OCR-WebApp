@@ -1,0 +1,12 @@
+names:
+- license-plate
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: ocr-nsde5
+  url: https://universe.roboflow.com/yolotraining-dfaoh/ocr-nsde5/dataset/2
+  version: 2
+  workspace: yolotraining-dfaoh
+test: ../test/images
+train: OCR-2/train/images
+val: OCR-2/valid/images

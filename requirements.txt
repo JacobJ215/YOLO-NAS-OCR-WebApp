@@ -6,3 +6,4 @@ roboflow
 opencv-python
 streamlit
 easyocr
+python-dotenv
