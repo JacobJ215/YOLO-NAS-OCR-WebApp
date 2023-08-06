@@ -1,0 +1,8 @@
+torch
+torchvision
+torchaudio
+super-gradients
+roboflow
+opencv-python
+streamlit
+easyocr
