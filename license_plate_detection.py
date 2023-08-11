@@ -49,7 +49,7 @@ def object_detection_ocr(image, confidence):
     st.subheader('Output Image')
     st.image(image, channels="BGR", use_column_width=1)
 
-def object_detction__ocr_video(video, confidence, kpi1_text, kpi2_text, kpi3_text, stframe):
+def object_detction__ocr_video(video, confidence, kpi1_text, kpi2_text, stframe):
     cap = cv2.VideoCapture(video)
 
     width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -92,9 +92,8 @@ def object_detction__ocr_video(video, confidence, kpi1_text, kpi2_text, kpi3_tex
             fps = 1/(current_time - prev_time)
             prev_time = current_time
 
-            kpi1_text.write(f"<h1 style='text-align:center; color:red;'>{'{:.1f}'.format(fps)}</h1>", unsafe_allow_html=True)
-            kpi2_text.write(f"<h1 style='text-align:center; color:red;'>{'{:.1f}'.format(width)}</h1>", unsafe_allow_html=True)
-            kpi3_text.write(f"<h1 style='text-align:center; color:red;'>{'{:.1f}'.format(height)}</h1>", unsafe_allow_html=True)
+            kpi1_text.write(f"<h1 style='text-align:center; color:red;'>{'{:.1f}'.format(fps)} FPS</h1>", unsafe_allow_html=True)
+            kpi2_text.write(f"<h1 style='text-align:center; color:red;'>{'{:.7s}'.format(label)}</h1>", unsafe_allow_html=True)
 
         else:
             break
