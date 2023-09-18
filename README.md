@@ -4,6 +4,8 @@
 
 This project uses YOLO-NAS and EasyOCR to detect license plates and perform Optical Character Recognition (OCR) on them. The project includes both image and video processing capabilities, and has been deployed as a Streamlit web application. This is an update to a previous project, [Optical-Character-Recognition-WebApp](https://github.com/JacobJ215/Optical-Character-Recognition-WebApp)
 
+[GitHub](https://github.com/JacobJ215/YOLO-NAS-OCR-WebApp)
+
 ## Features
 * Real-time license plate detection using YOLO-NAS
 * Optical Character Recognition (OCR) using EasyOCR
